@@ -1,0 +1,66 @@
+<div class="container mt-5">
+  <h2>Generate source code</h2>
+  <div class = "col-lg-6 col-md-offset-1">
+
+
+    <form class="needs-validation" novalidate [formGroup]="formGroup.formGroup" (ngSubmit)="onSubmit()" >
+      <div class="form-group">
+        <label class="control-label" for="modelName"> Model name </label>
+        <input type="text"
+               id="modelName"
+               class="form-control"
+               [formControl]="formGroup.modelName"
+               placeholder="Input model name"
+               required autofocus="autofocus" />
+        <div *ngIf="checkFormControl(formGroup.modelName)"
+             class="alert-danger">
+
+          <div *ngIf="formGroup.modelName.errors?.['required']">
+            Input model name
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="idType"> Id type </label>
+        <input type="text"
+               id="idType"
+               class="form-control"
+               [formControl]="formGroup.idType"
+               placeholder="Input type of model"
+               required autofocus="autofocus" />
+        <div *ngIf="checkFormControl(formGroup.idType)"
+             class="alert-danger">
+
+          <div *ngIf="formGroup.idType.errors?.['required']">
+            Input type of model
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="basePackage"> Base Package </label>
+        <input type="text"
+               id="basePackage"
+               class="form-control"
+               [formControl]="formGroup.basePackage"
+               placeholder="Exm: com.example.projectName"
+               required autofocus="autofocus" />
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 mt-3">
+            <input type="submit" name="submit" id="submit"
+                   class="form-control btn btn-primary" value="Generate" />
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="form-group">
+      <span>Any questions? <a routerLink="/faq">FAQ</a></span>
+    </div>
+  </div>
+
+
+</div>
+
