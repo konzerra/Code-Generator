@@ -17,7 +17,7 @@ package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.port.out.cr
 
 import ${input.basePackage}.annotation.OutPort
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}
-import ${input.basePackage}.domain..${input.modelName.toLowerCase()}.dto.${input.modelName}SaveDto
+import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.dto.${input.modelName}SaveDto
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}Repository
     `
   }

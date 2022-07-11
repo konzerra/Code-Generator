@@ -16,7 +16,7 @@ export class KotlinInPortFindAll extends FileGenerator<KotlinInput>{
 package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.port.\`in\`.crud.impl
 
 import ${input.basePackage}.annotation.InPort
-import ${input.basePackage}.domain..${input.modelName.toLowerCase()}.dto.${input.modelName}ResponseDto
+import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.dto.${input.modelName}ResponseDto
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.port.\`in\`.${input.modelName}ApiPath
     `

@@ -16,7 +16,7 @@ export class KotlinUseCaseUpdate extends FileGenerator<KotlinInput>{
       return `
 package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.usecase.crud.impl
 
-import ${input.basePackage}.domain..${input.modelName.toLowerCase()}.dto.${input.modelName}UpdateDto
+import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.dto.${input.modelName}UpdateDto
 import ${input.basePackage}.annotation.UseCase
     `
   }

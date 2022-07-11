@@ -18,12 +18,11 @@ package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.usecase.cru
 
 import ${input.basePackage}.annotation.UseCase
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}
-
+import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.dto.${input.modelName}ResponseDto
     `
   }
   generateSourceCode(input: KotlinInput): string {
     return `${this.generateImports(input)}
-
 import konzerra_lab_kotlin_clean_architecture.generic.port.out.crud.OutPortFindAll
 import konzerra_lab_kotlin_clean_architecture.generic.usecase.crud.abstract_impl.UseCaseFindAllAbstractImpl
 import konzerra_lab_kotlin_clean_architecture.generic.util.Mapper

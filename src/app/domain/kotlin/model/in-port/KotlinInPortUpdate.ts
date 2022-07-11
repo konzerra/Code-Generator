@@ -18,7 +18,7 @@ package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.port.\`in\`
 
 import ${input.basePackage}.annotation.InPort
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}
-import ${input.basePackage}.domain..${input.modelName.toLowerCase()}.dto.${input.modelName}UpdateDto
+import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.dto.${input.modelName}UpdateDto
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.port.\`in\`.${input.modelName}ApiPath
     `
   }

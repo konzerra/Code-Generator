@@ -18,13 +18,11 @@ export class KotlinUseCaseSave extends FileGenerator<KotlinInput>{
 package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.usecase.crud.impl
 
 import ${input.basePackage}.annotation.UseCase
-import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}
-
+import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.dto.${input.modelName}SaveDto
     `
   }
   generateSourceCode(input: KotlinInput): string {
     return `${this.generateImports(input)}
-
 import konzerra_lab_kotlin_clean_architecture.generic.port.out.crud.OutPortSave
 import konzerra_lab_kotlin_clean_architecture.generic.usecase.crud.abstract_impl.UseCaseSaveAbstractImpl
 

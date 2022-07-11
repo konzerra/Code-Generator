@@ -18,6 +18,7 @@ package ${input.basePackage}.domain.${input.modelName.toLowerCase()}.port.out.cr
 import ${input.basePackage}.annotation.OutPort
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}
 import ${input.basePackage}.domain.${input.modelName.toLowerCase()}.${input.modelName}Repository
+import ${input.basePackage}.exception.ResourceNotFoundException
     `
   }
   generateSourceCode(input:KotlinInput):string {
